@@ -1,0 +1,12 @@
+<servers>
+  <server>
+    <name color="red">storage-001</name>
+    <owner>dc-team</owner>
+    <status>active</status>
+  </server>
+  <server>
+    <name>zabbix-001</name>
+    <owner>lan-team</owner>
+    <status>offline</status>
+  </server>  
+</servers>

@@ -1,0 +1,19 @@
+{
+    "servers": {
+        "server": [
+            {
+                "name": {
+                    "@color": "red",
+                    "#text": "storage-001"
+                },
+                "owner": "dc-team",
+                "status": "active"
+            },
+            {
+                "name": "zabbix-001",
+                "owner": "lan-team",
+                "status": "offline"
+            }
+        ]
+    }
+}

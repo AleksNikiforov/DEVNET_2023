@@ -1,0 +1,10 @@
+servers:
+  server:
+    - name:
+        "#text": storage-001
+        "@color": red
+      owner: dc-team
+      status: active
+    - name: zabbix-001
+      owner: lan-team
+      status: offline

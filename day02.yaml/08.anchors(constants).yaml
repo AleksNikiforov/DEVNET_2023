@@ -1,0 +1,10 @@
+- ubuntu: &ubuntu ubuntu-2204-lts
+  ram-large: &ram-large 128Gb
+  ram-small: &ram-small 8Gb
+
+- name: server1
+  os: *ubuntu
+  ram: *ram-large
+- name: server2
+  os: *ubuntu
+  ram: *ram-small

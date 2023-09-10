@@ -1,0 +1,4 @@
+server:
+  os: ubuntu
+  ram: 64gb
+  name: db-002

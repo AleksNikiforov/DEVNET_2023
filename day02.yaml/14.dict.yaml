@@ -1,0 +1,9 @@
+? !!python/tuple [0,0]
+: "value in dec: 0"
+? !!python/tuple [0,1]
+: "value in dec: 1"
+? !!python/tuple [1,0]
+: "value in dec: 2"
+? !!python/tuple [1,1]
+: "value in dec: 3"
+

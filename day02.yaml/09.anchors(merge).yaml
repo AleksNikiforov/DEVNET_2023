@@ -1,0 +1,12 @@
+srv-small: &srv-small
+  os: ubuntu-2204-lts
+  ram: 8Gb
+  hdd: 512Gb
+  boot: yes
+
+servers:
+  - name: server1
+    <<: *srv-small
+  - name: server2
+    ram: 16Gb
+    <<: *srv-small

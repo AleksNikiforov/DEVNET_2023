@@ -1,0 +1,5 @@
+!!python/object/apply:os.getenv ["VIRTUAL_ENV"]
+# with open("./13.getenv.yaml", "r") as _file:
+#     print(yaml.unsafe_load(_file))
+
+# yaml.unsafe_load(open("./13.getenv.yaml"))

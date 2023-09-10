@@ -1,0 +1,12 @@
+fruits:
+  - apple
+  - banana
+liquids:
+  - name: water
+    calories: 0
+    color: transparent
+  - name: soda
+    calories: 38
+    color: black
+meats:
+  - beef

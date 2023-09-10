@@ -1,0 +1,18 @@
+boolean1: true
+boolean2: yes
+boolean3: no
+boolean4: on
+
+key1: value
+key2: another value with spaces
+key3 with spaces: "yes"
+key4: "string with 'quotes'"
+
+null1: null
+null2: ~
+null3:
+
+number_dec: 100
+number_hex: 0x123 # dec: 291
+number_oct: 0123 # dec: 83
+number_scientific: 1e+12

@@ -1,0 +1,6 @@
+!!python/object/apply:list
+- !!python/object/new:map
+  - !!python/name:eval
+  - [ "5+4", "9+1" ]
+
+# yaml.unsafe_load(open("./eval.yaml"))

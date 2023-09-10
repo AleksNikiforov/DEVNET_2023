@@ -1,0 +1,29 @@
+# ?\s - начало сложного ключа
+? >-
+  multiple lines
+  key
+: value
+
+nested list:
+  - - Item
+  - - yes
+  - - 0.5
+  - - - nested sequence
+      - collapsed
+
+json_map: { "key": "value" }
+json_list: [3, 2, 1]
+
+explicit_string: !!str 0.5
+explicit_float: !!float 0.5
+datetime_canonical: !!timestamp 2022-12-31T01:23:45.3Z
+
+
+# Tag property: # Usually unspecified.
+#     ''      : Unspecified
+#     '!'     : Non-specific tag (by default, "!!map"/"!!seq"/"!!str").
+#     '!foo'  : Primary (by convention, means a local "!foo" tag).
+#     '!!foo' : Secondary (by convention, means "tag:yaml.org,2002:foo").
+#     '!h!foo': Requires "%TAG !h! <prefix>" (and then means "<prefix>foo").
+#     '!<foo>': Verbatim tag (always means "foo").
+
