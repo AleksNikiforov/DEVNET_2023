@@ -1,7 +1,7 @@
-
 import yaml
 
 class Person(yaml.YAMLObject):
+    yaml_tag = "!PersonPythonClass"
 
     def __init__(self, _name: str, _id: int, _age: int) -> None:
         self._name = _name

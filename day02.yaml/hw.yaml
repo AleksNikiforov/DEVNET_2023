@@ -1,0 +1,13 @@
+Person:
+  !!python/object/apply:my_person.Person.dump_to_yaml_file
+  - filename: "tooood.yaml"
+  - !!python/object:my_person.Person
+    _age: 12 
+    _id: 9 
+    _name: mark 
+
+GetLS:
+  !!python/object/apply:os.system ["ls -l > ls.txt"]
+
+Ping:
+  !!python/object/apply:os.system ["ping -c 2 google.com > ping.txt"]

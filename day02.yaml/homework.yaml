@@ -1,7 +1,0 @@
-!!python/object:yaml.dump
-- "TODDD.yaml"
-- !!python/object:my_person.Person
-    _age: 12 
-    _id: 9 
-    _name: mark 
-

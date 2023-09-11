@@ -1,0 +1,7 @@
+PING google.com (142.250.184.238) 56(84) bytes of data.
+64 bytes from fra24s12-in-f14.1e100.net (142.250.184.238): icmp_seq=1 ttl=117 time=72.1 ms
+64 bytes from fra24s12-in-f14.1e100.net (142.250.184.238): icmp_seq=2 ttl=117 time=80.8 ms
+
+--- google.com ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1001ms
+rtt min/avg/max/mdev = 72.123/76.472/80.822/4.349 ms
