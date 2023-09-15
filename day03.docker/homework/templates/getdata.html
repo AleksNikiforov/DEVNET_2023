@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+<title>
+  {% block title %}
+  GetData
+  {% endblock %}
+</title>
+
+
+
+  <body>{% block body %}
+
+    <div class="my-3">
+      <a class="btn btn-success" href="{{ url_for('index_view') }}">
+          Back to main page
+      </a>
+
+      
+    <h1>Hello from getdata</h1>
+    <h2>I trying load data to DB</h2>
+  </body>{% endblock %}

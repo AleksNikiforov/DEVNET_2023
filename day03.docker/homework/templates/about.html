@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+<title>
+  {% block title %}
+  About
+  {% endblock %}
+</title>
+
+
+
+  <body>{% block body %}
+
+    <div class="my-3">
+      <a class="btn btn-success" href="{{ url_for('index_view') }}">
+          Back to main page
+      </a>
+
+      
+    <h1>Hello from About</h1>
+    <h2>I have nothing to say about this document.</h2>
+  </body>{% endblock %}

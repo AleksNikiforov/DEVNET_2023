@@ -1,0 +1,7 @@
+docker build -t solver:fastapi .
+docker tag solver:fastapi cr.yandex/crprt01pvhgjo2ah62me/solver:fastapi
+docker push cr.yandex/crprt01pvhgjo2ah62me/solver:fastapi
+
+через buildx plugin (например для другой архитектуры):
+docker buildx build --platform linux/amd64 -t cr.yandex/crprt01pvhgjo2ah62me/solver:fastapi .
+docker push cr.yandex/crprt01pvhgjo2ah62me/solver:fastapi

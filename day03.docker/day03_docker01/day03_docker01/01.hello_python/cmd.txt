@@ -1,0 +1,2 @@
+docker build -t hello_python:latest .
+docker run --rm hello_python:latest
