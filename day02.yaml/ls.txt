@@ -19,10 +19,10 @@ total 104
 -rw-rw-r-- 1 naa naa  137 Sep  9 12:53 13.eval.yaml
 -rw-rw-r-- 1 naa naa  178 Sep  9 12:53 13.getenv.yaml
 -rw-rw-r-- 1 naa naa  173 Sep  9 12:53 14.dict.yaml
--rw-rw-r-- 1 naa naa  218 Sep 10 17:02 homework.py
--rw-rw-r-- 1 naa naa  120 Sep 10 17:05 homework.yaml
--rw-rw-r-- 1 naa naa    0 Sep 11 15:02 ls.txt
--rw-rw-r-- 1 naa naa  507 Sep 11 10:14 my_person.py
-drwxrwxr-x 2 naa naa 4096 Sep 11 14:45 __pycache__
--rw-rw-r-- 1 naa naa  260 Sep 11 15:02 test.yaml
+-rw-rw-r-- 1 naa naa  216 Sep 11 21:48 homework.py
+-rw-rw-r-- 1 naa naa  824 Sep 11 21:48 hw.yaml
+-rw-rw-r-- 1 naa naa    0 Sep 11 21:48 ls.txt
+-rw-rw-r-- 1 naa naa  522 Sep 11 15:16 my_person.py
+-rw-rw-r-- 1 naa naa  389 Sep 11 21:46 ping.txt
+drwxrwxr-x 2 naa naa 4096 Sep 11 15:16 __pycache__
 drwxrwxr-x 5 naa naa 4096 Sep 10 11:04 venv

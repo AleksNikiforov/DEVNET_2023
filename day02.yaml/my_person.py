@@ -9,7 +9,7 @@ class Person(yaml.YAMLObject):
         self._age = _age
 
     def __repr__(self) -> str:
-        return f"({self._id}){self._name}<{self._age}-yo>"
+        return f"id = {self._id}, name = {self._name}, age = {self._age}"
 
     def inc_age(self) -> None:
         self._age += 1
