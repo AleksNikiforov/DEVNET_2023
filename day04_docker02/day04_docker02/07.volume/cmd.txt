@@ -1,0 +1,6 @@
+docker build -t volume_example .
+docker run --name c1 volume_example
+docker volume list
+docker volume inspect <>
+docker rm -v c1
+docker volume list

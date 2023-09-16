@@ -1,0 +1,4 @@
+docker build -t run_example .
+docker run --rm -p 8080:80 run_example
+
+curl 127.0.0.1:8080

@@ -1,0 +1,2 @@
+docker build -t workdir_example .
+docker run --rm workdir_example

@@ -1,0 +1,2 @@
+docker build -t env_example .
+docker run --rm env_example

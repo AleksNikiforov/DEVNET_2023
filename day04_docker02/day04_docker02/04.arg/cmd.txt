@@ -1,0 +1,5 @@
+docker build -t arg_example .
+docker run --rm arg_example
+
+docker build -t arg_example --build-arg python_version=3.11-slim .
+docker run --rm arg_example

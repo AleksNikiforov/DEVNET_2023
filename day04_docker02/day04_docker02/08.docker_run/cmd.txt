@@ -1,0 +1,10 @@
+docker run \
+ --rm \
+ --name c1 \
+ -d \
+ -p 8080:80/tcp \
+ -p 8443:443/tcp \
+ -v ./:/usr/share/nginx/html:ro \
+ -e APP_NAME="my website" \
+ -e APP_VERSION="0.0.2" \
+ nginx:latest

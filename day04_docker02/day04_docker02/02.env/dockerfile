@@ -1,0 +1,5 @@
+FROM busybox:latest
+
+ENV TARGET="google.com"
+
+CMD [ "sh", "-c", "ping -c 5 $TARGET" ]

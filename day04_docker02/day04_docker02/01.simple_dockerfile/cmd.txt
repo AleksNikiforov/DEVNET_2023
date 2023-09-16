@@ -1,0 +1,2 @@
+docker build -t simple_dockerfile .
+docker run --rm simple_dockerfile
