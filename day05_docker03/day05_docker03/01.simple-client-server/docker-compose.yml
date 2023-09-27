@@ -1,0 +1,24 @@
+version: "3"
+
+services:
+  my-server:
+    image: server:latest
+    ports:
+      - "8080:8080"
+    networks:
+      - client_server_network
+      
+  my-client:
+    image: client:latest
+    environment:
+      - SERVER_IP=my-server:8080
+    networks:
+      - client_server_network
+    volumes:
+      - log-volume:/var/log/app
+
+networks:
+  client_server_network:
+
+volumes:
+  log-volume:

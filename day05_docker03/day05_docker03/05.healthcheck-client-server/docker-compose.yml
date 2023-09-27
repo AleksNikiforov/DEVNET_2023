@@ -1,0 +1,52 @@
+version: "3"
+
+services:
+  my-server:
+    build:
+      context: ./server/
+      args:
+        - FROM=python:3.11-slim
+    image: server:latest
+    restart: always
+    networks:
+      - client_server_network
+    healthcheck:
+      # test: "curl --fail http://localhost:8080/status || exit 1"
+      # interval: 5s
+      # timeout: 2s
+      # retries: 3
+      # start_period: 5s
+      test: "test -f /status || exit 1"
+      interval: 5s
+      timeout: 2s
+      retries: 3
+      start_period: 10s
+
+      
+  my-client:
+    build:
+      context: ./client/
+      args:
+        - FROM=python:3.10-slim
+    image: client:latest
+    restart: always
+    environment:
+      - SERVER_IP=my-server:8080
+    networks:
+      - client_server_network
+    depends_on:
+      my-server:
+        condition: service_healthy
+    volumes:
+      - log-volume:/var/log/app
+
+networks:
+  client_server_network:
+    driver_opts:
+      com.docker.network.enable_ipv6: "false"
+    ipam:
+      config:
+        - subnet: 100.64.16.0/24
+
+volumes:
+  log-volume:

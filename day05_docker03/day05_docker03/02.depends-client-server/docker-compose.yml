@@ -1,0 +1,33 @@
+version: "3"
+
+services:
+  my-server:
+    image: server:latest
+    ports:
+      - "8080:8080"
+    networks:
+      - client_server_network
+    healthcheck:
+      test: "curl --fail http://localhost:8080/status || exit 1"
+      interval: 5s
+      timeout: 2s
+      retries: 3
+      start_period: 5s
+      
+  my-client:
+    image: client:latest
+    environment:
+      - SERVER_IP=my-server:8080
+    networks:
+      - client_server_network
+    depends_on:
+      my-server:
+        condition: service_healthy
+    volumes:
+      - log-volume:/var/log/app
+
+networks:
+  client_server_network:
+
+volumes:
+  log-volume:

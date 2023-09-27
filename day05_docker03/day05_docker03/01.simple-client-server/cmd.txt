@@ -1,0 +1,35 @@
+docker build -t server:latest .
+docker build -t client:latest .
+
+docker ps
+docker inspect
+
+docker run --rm -p 8080:8080 server:latest
+docker run --rm -e SERVER_IP="172.17.0.1:8080" client:latest
+
+
+==== 
+
+docker network create client_server_network
+docker volume create log_volume
+
+docker run \
+--rm \
+-p 8080:8080 \
+--name my-server \
+--network client_server_network \
+server:latest
+
+
+docker run \
+--rm \
+-e SERVER_IP="my-server:8080" \
+-v log_volume:/var/log/app \
+--name my-client \
+--network client_server_network \
+client:latest
+
+
+
+=====
+
